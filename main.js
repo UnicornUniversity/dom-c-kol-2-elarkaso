@@ -27,6 +27,8 @@ export function main(inputNumber, inputNumberSystem, outputNumberSystem) {
   let binary = "";
 
   // main conversion loop
+  if (currentValue === 0) return "0";
+
   while (currentValue > 0){
       if(currentValue % 2 === 1){
           binary = "1" + binary;
